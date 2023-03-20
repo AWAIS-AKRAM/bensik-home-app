@@ -9,8 +9,8 @@ export default function ProjectsCards(props) {
     }}>
         
         <img src={[props.building]} alt="" />
-        <h3 style={{color:props.textColor}}>{[props.htag]}</h3>
-        <p style={{color:props.textColor}}>{[props.ptag]}</p>
+        <h3 style={{color:props.textColor, marginLeft:12}}>{[props.htag]}</h3>
+        <p style={{color:props.textColor, marginLeft:12}}>{[props.ptag]}</p>
 
     </div>
   )

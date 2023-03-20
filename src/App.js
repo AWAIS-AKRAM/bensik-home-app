@@ -62,7 +62,7 @@ function App() {
         <img className='img3' src={img3} alt="" />
         <div className='d4'>
           <h1 className='h3'>About us</h1>
-          <p className='p1'>For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way.   We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
+          <p className='p1'>For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way. We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
           <input className='input1' type="text" placeholder='More On Your History' />
         </div>
       </div>
@@ -80,11 +80,17 @@ function App() {
       <Cards bgColor={"#FFFFFF"} htag={"Architecture"} textcolor={"#2947A9"} house={icon4} />
       <Cards bgColor={"#2947A9"} htag={"Electric"} textcolor={"#FFFFFF"} house={icon5} />
       </div>
-      <div>
-        <img className='image4' src={img4} alt="" />
+      <div className='image4' style={{
+        backgroundImage: "url(" + img4 + ")"
+      }}>
+        <div className='consultationDiv'>
+        <div>
+
         <h1 className='h6'>Free consultation with exceptional quality</h1>
         <p className='p2'>Just one call away: +84 1102 2703</p>
-        <button className='b2'>Get your consultation</button>
+        </div>
+        <div className='b2'>Get your consultation</div>
+        </div>
       </div>
 
       <div>
@@ -124,12 +130,12 @@ function App() {
         <p className='p3'>We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
       </div>
 <div style={{display:'flex',gap:20,marginLeft:424}}>
-  <InputCards/>
-  <InputCards/>
+  <InputCards inputText={"Your Name"}/>
+  <InputCards inputText={"Your email"}/>
   </div>
   <div style={{display:'flex',gap:20,marginLeft:424,marginTop:30}}>
-  <InputCards/>
-  <InputCards/>
+  <InputCards inputText={"Your Phone"}/>
+  <InputCards inputText={"Your Address"}/>
   </div>
   <div>
   <input className='input2' placeholder='Message' type="text" />
